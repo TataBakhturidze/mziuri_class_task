@@ -3,3 +3,16 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+.App {
+  padding-top: 40px;
+  width: 100%;
+  grid-column: 2;
+  grid-row: 4;
+  grid-template-columns: auto auto auto;
+  column-gap: 20px;
+  row-gap: 40px;
+  justify-items: center;
+  display: grid;
+  background: thistle;
+}
