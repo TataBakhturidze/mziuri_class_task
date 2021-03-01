@@ -1,7 +1,9 @@
 import { GET_USERS } from './constants';
 
 const initialState = {
-    Users : []
+    Users : [],
+    Photos: [],
+    News:[]
 }
 
 const Reducer = (state=initialState, action) =>{

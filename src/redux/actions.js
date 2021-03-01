@@ -6,10 +6,11 @@ export const getUsers = () => async dispatch => {
         method: "GET",
         url: `${process.env.REACT_APP_API_HOST}public-api/users`,
     }).then(response => {
+        console.log(response)
         if(response.status === 200){
             dispatch({
                 type: GET_USERS,
-                payload: response.data
+                payload: response.data.data
             })
         }
     })
