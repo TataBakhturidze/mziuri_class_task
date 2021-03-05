@@ -17,7 +17,7 @@ function Userscomponent({gender,name,email,id}) {
             <Card style={{width: "345px"}} >
                 <CardActionArea>
                     <CardMedia
-                    // image={Photo}
+                    image={Photo}
                     title="Contemplative Reptile"
                     style={{height: "140px", background: "#a882a8"}}
                     />
@@ -34,7 +34,7 @@ function Userscomponent({gender,name,email,id}) {
                     </CardContent>
                 </CardActionArea>
                 <CardActions>
-                        <Button component={Link} to={`/single/${id}`} size="small" color="primary">
+                        <Button component={Link} to={`/users/single/${id}`} size="small" color="primary">
                         View full profile
                         </Button>
                 </CardActions>

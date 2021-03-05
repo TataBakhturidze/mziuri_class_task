@@ -2,13 +2,14 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: system-ui;
   
 }
 body{
   background: thistle;
 }
 .App {
-  padding: 40px 0 ;
+  padding: 40px 0;
   width: 100%;
   grid-column: 2;
   grid-row: 4;
