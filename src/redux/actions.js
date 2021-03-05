@@ -52,7 +52,7 @@ export const getComments = () => async dispatch => {
 export const getTodos = () => async dispatch => {
     await axios({
         method: "GET",
-        url: `${process.env.REACT_APP_API_HOST}piblic-api/todos`,
+        url: `${process.env.REACT_APP_API_HOST}public-api/todos`,
     }).then(response => {
         if(response.status === 200){
             dispatch({
@@ -65,7 +65,7 @@ export const getTodos = () => async dispatch => {
 export const getCategories = () => async dispatch => {
     await axios({
         method: "GET",
-        url: `${process.env.REACT_APP_API_HOST}piblic-api/categories`,
+        url: `${process.env.REACT_APP_API_HOST}public-api/categories`,
     }).then(response => {
         if(response.status === 200){
             dispatch({
@@ -78,7 +78,7 @@ export const getCategories = () => async dispatch => {
 export const getProducts = () => async dispatch => {
      await axios({
         method: "GET",
-        url: `${process.env.REACT_APP_API_HOST}piblic-api/products`,
+        url: `${process.env.REACT_APP_API_HOST}public-api/products`,
     }).then(response => {
         if(response.status === 200){
             dispatch({

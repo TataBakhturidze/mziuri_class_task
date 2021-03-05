@@ -99,18 +99,18 @@ const {t} = useTranslation()
                 })
               )}
             </Route>
-            {/* <Route path="/todos">
+            <Route path="/todos">
               {Todos.length > 0 && (
-                Todos.map( item => {
+                Todos.map(item => {
                   return(
-                    <TodosComponent
+                    <TodosComponent 
                     title={item.title}
                     completed={item.completed}
                     />
                   )
                 })
               )}
-            </Route> */}
+            </Route>
             <Route path="/categories">
               {Categories.length > 0 && (
                 Categories.map( item => {
