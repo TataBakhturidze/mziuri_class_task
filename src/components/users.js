@@ -19,7 +19,7 @@ function Userscomponent({gender,name,email,id}) {
                     <CardMedia
                     image={Photo}
                     title="Contemplative Reptile"
-                    style={{height: "140px", background: "#a882a8"}}
+                    style={{height: "140px"}}
                     />
                     <CardContent>
                     <Typography gutterBottom variant="h5" component="h2">

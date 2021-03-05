@@ -3,7 +3,7 @@ import './mainPage.css'
 
 function MainPage() {
     return (
-        <div>
+        <div className='mainPage'>
             Hello Choose route
         </div>
     )

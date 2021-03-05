@@ -1,3 +1,14 @@
-/* div {
+.mainPage {
+    text-align: center;
+    width: 100%;
     grid-area: 2/2;
-} */
+    font-size: 25px;
+    display: flex;
+    background: #5d005d;
+    height: 150px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    color: white;
+    text-transform: capitalize;
+}
