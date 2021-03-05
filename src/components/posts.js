@@ -10,7 +10,7 @@ function PostsComponent({body,title}) {
         <Card style={{width: "345px"}} >
             <CardActionArea>
                 <CardContent>
-                    <Typography gutterBottom variant="h5" component="h2" style={{background: "#a882a8", padding:"12px"}}>
+                    <Typography gutterBottom variant="h5" component="h2" style={{background: "#a882a8", padding:"12px", borderRadius: '2px'}}>
                         {title}
                     </Typography>
                     <Typography variant="body2" color="textSecondary" component="p">

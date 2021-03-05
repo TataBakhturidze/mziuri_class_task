@@ -20,4 +20,12 @@ body{
   display: grid;
   
 }
-
+footer {
+  background-color: #a882a8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  color: white;
+  font-size: 17px;
+}

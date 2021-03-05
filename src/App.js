@@ -24,7 +24,8 @@ import MainPage from './components/mainPage/mainPage';
 import CommentsComponent from './components/comments';
 import TodosComponent from './components/todos';
 import CategoriesComponent from './components/categories';
-import ProductsComponent from './components/products';
+import ProductsComponent from './components/products/products';
+import Footer from './components/footer'
 
 
 function App() {
@@ -143,6 +144,7 @@ const {t} = useTranslation()
             </Route>
           </Switch>
           </div>
+          <Footer/>
         </div>
     </Router>
   );

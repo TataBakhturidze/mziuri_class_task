@@ -9,10 +9,10 @@ import React from 'react'
 import {Link,useParams} from 'react-router-dom'
 import {useSelector} from 'react-redux'
 
-function UsersSinglePage({}) {
+function UsersSinglePage() {
     const params = useParams()
     console.log(params)
-    const UserSingle = useSelector(state => state.Users.find(item=>item.id == params.id))
+    const UserSingle = useSelector(state => state.Users.find(item=>item.id === params.id))
     console.log(UserSingle)
     return (
             <Card style={{width: "600px",gridColumn: "2/3",}} >
