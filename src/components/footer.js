@@ -1,10 +1,11 @@
 import React from 'react'
 import '../App.css'
-
+import {useTranslation} from 'react-i18next'
 function Footer() {
+    const {t} = useTranslation()
     return (
         <footer>
-            &copy; Copyright 2021 API workout
+            &copy; {t('Copyright 2021 API workout')}
         </footer>
     )
 }

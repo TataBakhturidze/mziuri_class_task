@@ -1,0 +1,11 @@
+{
+    "users":"users",
+    "posts" : "posts",
+    "comments" : "comments",
+    "todos": "todos",
+    "categories" : "categories",
+    "products": "products",
+    "view full profile": "view full profile",
+    "Copyright 2021 API workout":"Copyright 2021 API workout",
+    "back":"back"
+}

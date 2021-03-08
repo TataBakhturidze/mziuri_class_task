@@ -9,10 +9,11 @@ import Typography from '@material-ui/core/Typography';
 import Photo from '../img/user.png'
 import {Link} from 'react-router-dom'
 import '../App.css';
+import {useTranslation} from 'react-i18next'
 
 
 function Userscomponent({gender,name,email,id}) {
-
+const {t} = useTranslation()
     return (
             <Card style={{width: "345px"}} >
                 <CardActionArea>
@@ -35,7 +36,7 @@ function Userscomponent({gender,name,email,id}) {
                 </CardActionArea>
                 <CardActions>
                         <Button component={Link} to={`/users/single/${id}`} size="small" color="primary">
-                        View full profile
+                        {t('view full profile')}
                         </Button>
                 </CardActions>
             </Card>  

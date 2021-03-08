@@ -26,6 +26,8 @@ import TodosComponent from './components/todos';
 import CategoriesComponent from './components/categories';
 import ProductsComponent from './components/products/products';
 import Footer from './components/footer'
+import {translate} from 'react-i18next'
+
 
 
 function App() {
@@ -60,7 +62,7 @@ const {t} = useTranslation()
             <Route exact path="/">
               <MainPage/>
             </Route>
-            <Route path="/users" >
+            <Route path="/users" exact>
               {Users.length > 0 && (
                 Users.map(item => {
                   return(
