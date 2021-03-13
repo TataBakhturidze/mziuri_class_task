@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import { Link } from 'react-router-dom'
 import './nav.css'
 import {useTranslation} from 'react-i18next'
@@ -6,9 +6,23 @@ import i18next from '../../languages/i18n'
 
 function Nav() {
     const {t} = useTranslation()
+
     const changeLanguage = () =>{
-        i18next.changeLanguage(i18next.language == "en" ? "ka"  : "en")
+        if(localStorage.getItem('language') == 'en'){
+            localStorage.setItem('language', 'ka')
+            i18next.changeLanguage('ka')
+        }else if(localStorage.getItem('language') == 'ka'){
+            localStorage.setItem('language', 'en')
+            i18next.changeLanguage('en')
       }
+    }
+
+
+      useEffect(() => {
+        localStorage.getItem('language') == 'en' ? i18next.changeLanguage('en'): i18next.changeLanguage('ka')
+      }, [])
+
+
     return (
         <nav>
             <ol>

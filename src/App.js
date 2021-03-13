@@ -47,6 +47,7 @@ function App() {
       dispatch(getTodos())
       dispatch(getCategories())
       dispatch(getProducts())
+      localStorage.getItem('language')
   }, [])
 
 
